@@ -1,4 +1,6 @@
-#nav { width: 400px; background-color: gold;}
+#nav { width: 400px; background-color: gold;
+    position: relative;
+}
 #menu { background-color: green; }
 .menu1 { 
     background-color: skyblue;
