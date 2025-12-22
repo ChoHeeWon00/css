@@ -1,12 +1,21 @@
 #div1 { width: 100px; height: 100px;
-    border-radius: 100px; background-color: red;
+    border-radius: 100px; border: 1px solid rebeccapurple;
     overflow: hidden;
 }
-img { width: 100px; height: 100px; transition: 1s; }
-#div1:hover {
-    & img{ transform: scale(4) rotate(720deg); }
-    & ~ #div2{ transition: 0.5s; margin-top: 0px; color: navy; }
+img { width: 100px; height: 100px; 
+    transition: 1s;
 }
-#div2 { width: 100px; text-align: center; margin-top: -70px;
-    font-size: 30px; color: white; transition: 3s; 
+#div1:hover > img {
+    transform: scale(4) rotate(720deg);
+}
+#div1:hover ~ #div2 {
+    margin-top: 0;
+    color: navy;
+    transition: 0.5s;
+}
+#div2 {
+    font-size: 30px;
+    transition: 3s;
+    width: 100px; text-align: center;
+    margin-top: -70px; color: white;
 }
